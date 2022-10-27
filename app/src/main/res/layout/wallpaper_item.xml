@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    android:layout_height="250dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/im_item"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_photographer_name"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingStart="10dp"
+            android:layout_centerInParent="true"
+            android:text="Photographer name"
+            android:textAlignment="center"
+            android:paddingEnd="10dp"
+            android:textSize="10sp"
+            android:drawablePadding="5dp"
+            app:drawableStartCompat="@drawable/ic__camera"/>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
